@@ -2,7 +2,7 @@ print('\033[0;30mTabuada do Flavio :3')
 n1=int(input('Escolha o primeiro valor:'))
 n2=int(input('Escolha o segundo valor:'))
 c=n2
-while c == 0:
+while c >0:
     c =c-1
     n=n1*c
     print(n1,'x',c,'=',n)
