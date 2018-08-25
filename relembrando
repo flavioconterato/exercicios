@@ -1,0 +1,32 @@
+n=int(input('Digite \033[30mQUALQUER\033[m valor inteiro,\033[31mSEM SER 0\033[m,para iniciar o programa:'))
+lista=[]
+c=0
+t=0
+print('Programa iniciado,bem vindo ao \033[34mAnalisador de listas\033[m')
+while n!=0:
+    t=t+1
+    print('\033[30mPara finalizar o programa apenas digite 0\033[m')
+    n=int(input('Digite um valor:'))
+    c=c+n
+    lista.append(n)
+tot=t-1
+m=c/tot
+print('A média é {:.2f},o valor máximo é {}, o valor mínimo é {}'.format(m,max(lista),min(lista)))
+op = str(input('Deseja continuar?[ N,S ]'.upper()))
+while  op!='N':
+    n = int(input('Digite \033[30mQUALQUER\033[m valor inteiro,\033[31mSEM SER 0\033[m,para RETOMAR o programa:'))
+    print('Programa retomado,bem vindo novamente ao \033[34mAnalisador de listas\033[m')
+    while n != 0:
+        lista.append(n)
+        print('\033[30mPara finalizar o programa apenas digite 0\033[m')
+        n = int(input('Digite um valor:'))
+        t=t+1
+        c=c+n
+    tot1=t-2
+    m1=c/(tot1)
+    print('A média é {:.3f},o valor máximo é {}, o valor mínimo é {}'.format(m1, max(lista), min(lista)))
+    op = str(input('Deseja continuar?[ N,S ]'.upper()))
+if  op=='N':
+    print('Programa finalizado')
+
+
