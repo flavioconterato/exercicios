@@ -21,6 +21,5 @@ def saque(valor,cinquentareais,vintereais,dezreais,umreal):
     return valor,cinquentareais,vintereais,dezreais,umreal
 
 print('banco')
-n=saque(valor,cinquentareais,vintereais,dezreais,umreal)
-print(n)
+saque(valor,cinquentareais,vintereais,dezreais,umreal)
 print('Você vai receber {} notas de 50,{} notas de 20,{} notas de 10,e {} moedas de 1'.format(cinquentareais,vintereais,dezreais,umreal))
