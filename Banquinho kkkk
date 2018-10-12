@@ -1,7 +1,4 @@
-cinquentareais = 0
-vintereais = 0
-dezreais = 0
-umreal = 0
+#OBS: Adicione notas de 100 reais e de 5 reais.E valor de 1 real modifique por 2 reais, não existe cédula mais de 1 real.
 valor=int(input('Qual o valor?'))
 def saque(valor):
     if valor >= 50:
@@ -25,5 +22,5 @@ def saque(valor):
     return cinquentareais,vintereais,dezreais,umreal
 
 print('BANCO')
-saque(valor)
+cinquentareais,vintereais,dezreais,umreal = saque(valor)
 print('Você vai receber {} notas de 50,{} notas de 20,{} notas de 10,e {} moedas de 1'.format(cinquentareais,vintereais,dezreais,umreal))
